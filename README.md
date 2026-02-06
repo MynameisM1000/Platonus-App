@@ -29,7 +29,7 @@ Platonus is a smart platform designated for students to manage their academic li
 ## 📸 Screenshots
 
 ### Main Window
-![Main Window](screenshots/main.png)
+![Main Window](screenshots/main-view.png)
 
 ### journal Window
 ![Journal](screenshots/journal.png)
