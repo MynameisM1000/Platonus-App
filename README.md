@@ -31,7 +31,7 @@ Platonus is a smart platform designated for students to manage their academic li
 ### Main Window
 ![Main Window](screenshots/main-view.png)
 
-### journal Window
+### Journal Window
 ![Journal](screenshots/journal.png)
 
 ![Journal Graph](screenshots/grate.png)
@@ -46,7 +46,7 @@ Platonus is a smart platform designated for students to manage their academic li
 
 1.  **Clone the repository:**
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/MynameisM1000/Platonus-App.git
     cd gitplatouns
     ```
 
