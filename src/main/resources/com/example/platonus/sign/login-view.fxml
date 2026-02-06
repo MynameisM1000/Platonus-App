@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.platonus.LogRegController"
+      fx:id="root">
+    <stylesheets>
+        <URL value="@../css/logreg.css"/>
+        <URL value="@../css/tileBar.css"/>
+    </stylesheets>
+    <HBox fx:id="titleBar"
+          prefHeight="30"
+          alignment="CENTER_LEFT"
+          xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml">
+        <padding>
+            <Insets bottom="0" left="10" right="0" top="0" />
+        </padding>
+        <ImageView fitWidth="20" fitHeight="20" preserveRatio="true">
+            <image>
+                <Image url="@../img/logoPlanet.png" />
+            </image>
+        </ImageView>
+        <Region prefWidth="10"/>
+        <Label fx:id="appName"
+               text="Platonus v0.1"
+        />
+        <HBox HBox.hgrow="ALWAYS"></HBox>
+        <Button fx:id="minBtn"
+                prefHeight="30"
+                prefWidth="50"
+                styleClass="title-btn">
+            <graphic>
+                <ImageView fitWidth="10" fitHeight="10" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/titlePanelIcon/remove.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="maxBtn"
+                prefHeight="29"
+                prefWidth="50"
+                styleClass="title-btn">
+            <graphic>
+                <ImageView fitWidth="10" fitHeight="10" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/titlePanelIcon/tab.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="closeBtn"
+                prefHeight="29"
+                prefWidth="50"
+                text="✕"
+                styleClass="title-btn-close"/>
+    </HBox>
+    <HBox alignment="CENTER"
+          spacing="10"
+          VBox.vgrow="ALWAYS">
+        <VBox alignment="CENTER">
+            <VBox spacing="15" alignment="CENTER" styleClass="card" prefWidth="400">
+                <Button fx:id="logoImage" prefWidth="120">
+                    <graphic>
+                        <ImageView fitWidth="80" fitHeight="80" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/logoPlanet.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Label text="Log In to Platonus" styleClass="title-label"/>
+
+                <VBox spacing="5" alignment="CENTER">
+                    <Label text="Student ID :" styleClass="input-label" prefWidth="260"/>
+                    <TextField fx:id="userID"
+                               promptText="40184"
+                               styleClass="text-field"
+                               maxWidth="280"/>
+                </VBox>
+
+                <VBox spacing="5" alignment="CENTER">
+                    <Label text="Password:" styleClass="input-label" prefWidth="260"/>
+                    <PasswordField fx:id="userPassword"
+                                   promptText="Password"
+                                   styleClass="password-field"
+                                   maxWidth="280"/>
+                </VBox>
+                <Label text=""
+                       fx:id="errorLabel"
+                       styleClass="errorLabel"
+                       prefWidth="260"/>
+
+                <Button text="Log In"
+                        onAction="#onLogClick"
+                        styleClass="buttonLog"
+                        prefHeight="60"
+                        maxWidth="280"/>
+                <Pane fx:id="linePane" styleClass="gradient-line" prefHeight="4" prefWidth="300"/>
+                <Button fx:id="Reg" id="buttonToReg"
+                        onAction="#toRegPage"
+                        styleClass="buttonToReg"
+                        maxWidth="280"
+                        prefHeight="60"
+                        text="Sign In"/>
+            </VBox>
+            <padding>
+                <Insets top="80" bottom="80" left="40" right="40"/>
+            </padding>
+        </VBox>
+    </HBox >
+</VBox>

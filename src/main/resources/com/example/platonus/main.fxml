@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.Button?>
+<?import java.net.URL?>
+<?import javafx.scene.control.CheckBox?>
+<?import com.sun.javafx.charts.Legend?>
+<?import javafx.scene.control.ScrollPane?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.platonus.MainController">
+    <stylesheets>
+        <URL value="@css/main.css"/>
+        <URL value="@css/tileBar.css"/>
+    </stylesheets>
+    <HBox fx:id="titleBar"
+          prefHeight="30"
+          alignment="CENTER_LEFT"
+          xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml">
+        <padding>
+            <Insets bottom="0" left="10" right="0" top="0" />
+        </padding>
+        <ImageView fitWidth="20" fitHeight="20" preserveRatio="true">
+            <image>
+                <Image url="@img/logoPlanet.png" />
+            </image>
+        </ImageView>
+        <Region prefWidth="10"/>
+        <Label fx:id="appName"
+               text="Platonus v0.1"
+        />
+        <HBox HBox.hgrow="ALWAYS"></HBox>
+        <Button fx:id="minBtn"
+                prefHeight="30"
+                prefWidth="50"
+                styleClass="title-btn">
+            <graphic>
+                <ImageView fitWidth="10" fitHeight="10" preserveRatio="true">
+                    <image>
+                        <Image url="@img/titlePanelIcon/remove.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="maxBtn"
+                prefHeight="29"
+                prefWidth="50"
+                styleClass="title-btn">
+            <graphic>
+                <ImageView fitWidth="10" fitHeight="10" preserveRatio="true">
+                    <image>
+                        <Image url="@img/titlePanelIcon/tab.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="closeBtn"
+                prefHeight="29"
+                prefWidth="50"
+                text="✕"
+                styleClass="title-btn-close"/>
+    </HBox>
+    <HBox VBox.vgrow="ALWAYS" spacing="8" styleClass="root">
+        <VBox prefWidth="320" fx:id="leftHeaderTwo" spacing="10" styleClass="left-header">
+            <padding>
+                <Insets bottom="10" left="12" right="12" top="40" />
+            </padding>
+            <Button fx:id="logoImage">
+                <graphic>
+                    <ImageView fitWidth="80" fitHeight="80" preserveRatio="true">
+                        <image>
+                            <Image url="@img/logoPlanet.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+                Platonus.
+            </Button>
+            <Region prefHeight="30"/>
+            <Label text="    Feather &amp; Tools" styleClass="staticText"/>
+            <VBox spacing="10">
+
+                <Button styleClass="firstHeadBtn" fx:id="firstHeadcloseBtn" prefWidth="296" prefHeight="60" >
+                    <graphic>
+                        <ImageView  fitWidth="30" fitHeight="0" preserveRatio="true">
+                            <image><Image url="@img/icons/home.png"/></image>
+                        </ImageView>
+                    </graphic>
+                    Overview
+                </Button>
+
+                <Button styleClass="firstHeadBtn" fx:id="journalBTN" onAction="#ToTable" prefWidth="296" prefHeight="60">
+                    <graphic>
+                        <ImageView fitWidth="30" fitHeight="30" preserveRatio="true" styleClass="head-icon">
+                            <image><Image url="@img/icons/book.png"/></image>
+                        </ImageView>
+                    </graphic>
+                    Journal of marks
+                </Button>
+
+                <Button styleClass="firstHeadBtn" fx:id="tasksBTN" onAction="#ToTask" prefWidth="296" prefHeight="60">
+                    <graphic>
+                        <ImageView fitWidth="30" fitHeight="30" preserveRatio="true" styleClass="head-icon">
+                            <image><Image url="@img/icons/survey.png"/></image>
+                        </ImageView>
+                    </graphic>
+                    Tasks
+                </Button>
+
+                <Button styleClass="firstHeadBtn" fx:id="chatBTN" onAction="#ToChat" prefWidth="296" prefHeight="60">
+                    <graphic>
+                        <ImageView fitWidth="34" fitHeight="34" preserveRatio="true" styleClass="head-icon">
+                            <image><Image url="@img/icons/group.png"/></image>
+                        </ImageView>
+                    </graphic>
+                    Group
+                </Button>
+            </VBox>
+            <Region VBox.vgrow="ALWAYS"/>
+            <VBox alignment="BOTTOM_CENTER" spacing="10" maxHeight="200" prefWidth="296">
+                <Label text="© Platonus v0.1 2025" styleClass="staticText"/>
+                <HBox styleClass="account" alignment="CENTER_LEFT" spacing="10" prefHeight="75">
+                    <padding>
+                        <Insets bottom="0" left="5" right="10" top="0" />
+                    </padding>
+                    <Button styleClass="accountBTN" prefWidth="235" onAction="#ToProfile">
+                        <graphic>
+                            <HBox spacing="10">
+                                    <VBox  fx:id="backPlanets" alignment="CENTER" minHeight="50" minWidth="50">
+                                        <ImageView fitWidth="40" fitHeight="40" preserveRatio="true" fx:id="profileIcon">
+                                            <image><Image url="@img/profileIcons/1.png"/></image>
+                                        </ImageView>
+                                    </VBox>
+                                <VBox alignment="CENTER_LEFT">
+                                    <Label fx:id="fullNameHeader" styleClass="h4Text"/>
+                                    <Label fx:id="emailHeader" styleClass="staticText"/>
+                                </VBox>
+                            </HBox>
+                        </graphic>
+                    </Button>
+                    <Button styleClass="leaveBtn" prefWidth="40" prefHeight="40" fx:id="leaveBtn" onAction="#ToLog">
+                        <graphic>
+                            <ImageView fitWidth="20" fitHeight="20" preserveRatio="true">
+                                <image><Image url="@img/icons/exit.png"/></image>
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                </HBox>
+            </VBox>
+        </VBox>
+
+        <VBox fx:id="mainContainer" styleClass="mainContainer" HBox.hgrow="ALWAYS">
+
+            <VBox fx:id="section" VBox.vgrow="ALWAYS" spacing="20">
+                <padding><Insets bottom="10" left="60" right="60" top="60"/></padding>
+                <VBox>
+                    <HBox spacing="8">
+                        <Label fx:id="textHi" styleClass="h2Text" text="Hi" />
+                        <Label styleClass="h2Text" fx:id="fullName"/>
+                    </HBox>
+                    <HBox>
+                        <Label styleClass="h1Text" text="Welcome back"/>
+                        <ImageView fitWidth="48" fitHeight="48" >
+                            <image><Image url="@img/icons/hand.png" /></image>
+                        </ImageView>
+                    </HBox>
+                    <Region prefHeight="20"/>
+                </VBox>
+                <HBox prefHeight="300" styleClass="Box">
+                    <VBox prefHeight="300" prefWidth="500">
+                        <padding><Insets bottom="40" left="40" right="0" top="30"/></padding>
+                        <Label styleClass="h1Text" wrapText="true" text="Studying is easier with Platonus!"/>
+                        <Label styleClass="Boxtext" wrapText="true" text="Share the app with your friends and stay connected through Platonus." prefWidth="300"/>
+                        <Region VBox.vgrow="ALWAYS"/>
+                        <Button prefHeight="40"
+                                prefWidth="120"
+                                text="Share"
+                                onAction="#shareBtn"
+                                fx:id="shareBtn"/>
+                    </VBox>
+                    <Region HBox.hgrow="ALWAYS"/>
+                    <VBox prefHeight="300" prefWidth="320">
+                        <padding><Insets bottom="0" left="0" right="0" top="20"/></padding>
+                        <Button fx:id="bigPlanets" prefWidth="320" prefHeight="240"/>
+                        <Region VBox.vgrow="ALWAYS"/>
+                    </VBox>
+                    <Region HBox.hgrow="ALWAYS"/>
+                </HBox>
+
+                <HBox>
+                    <VBox styleClass="card" prefHeight="280" prefWidth="350" spacing="15">
+                        <padding><Insets bottom="40" left="40" right="40" top="30"/></padding>
+                        <Label styleClass="h3Text"
+                               text="People in your group"/>
+                        <ScrollPane styleClass="chatScroll" fitToWidth="true" VBox.vgrow="ALWAYS">
+                            <VBox fx:id="friendsContainer" spacing="15">
+
+                            </VBox>
+                        </ScrollPane>
+                    </VBox>
+                    <HBox minWidth="20"/>
+                    <VBox styleClass="card" prefHeight="280" prefWidth="350" spacing="15">
+                        <padding><Insets bottom="40" left="40" right="40" top="30"/></padding>
+                        <HBox>
+                            <Label styleClass="h3Text" text="Notes"/>
+                            <Region HBox.hgrow="ALWAYS"/>
+                            <Button prefWidth="20" prefHeight="20"  fx:id="addNote" styleClass="pinkBtn" onAction="#modalNote">
+                                <graphic>
+                                    <ImageView fitWidth="10" fitHeight="10" preserveRatio="true">
+                                        <image>
+                                            <Image url="@img/icons/plus.png" />
+                                        </image>
+                                    </ImageView>
+                                </graphic>
+                            </Button>
+                        </HBox>
+                        <ScrollPane fx:id="chatScroll" styleClass="chatScroll" fitToWidth="true" VBox.vgrow="ALWAYS">
+                            <VBox fx:id="notesCard" spacing="15">
+
+                            </VBox>
+                        </ScrollPane>
+                    </VBox>
+                    <HBox minWidth="20"/>
+                    <VBox styleClass="card" prefHeight="280" prefWidth="350" spacing="15">
+                        <padding><Insets bottom="0" left="40" right="40" top="30"/></padding>
+                        <Label styleClass="h3Text" text="Schedule"/>
+                        <VBox fx:id="timeBox" styleClass="timeBox" prefHeight="240" prefWidth="320" spacing="12">
+                        </VBox>
+                    </VBox>
+                </HBox>
+                <Region VBox.vgrow="ALWAYS"/>
+            </VBox>
+        </VBox>
+    </HBox>
+</VBox>
+

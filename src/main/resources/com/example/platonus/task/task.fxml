@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.platonus.Tasks">
+    <stylesheets>
+        <URL value="@../css/main.css" />
+        <URL value="@../css/tileBar.css" />
+        <URL value="@../css/modalNote.css" />
+    </stylesheets>
+    <HBox fx:id="titleBar" alignment="CENTER_LEFT" prefHeight="30">
+        <padding>
+            <Insets bottom="0" left="10" right="0" top="0" />
+        </padding>
+        <ImageView fitHeight="20" fitWidth="20" preserveRatio="true">
+            <image>
+                <Image url="@../img/logoPlanet.png" />
+            </image>
+        </ImageView>
+        <Region prefWidth="10" />
+        <Label fx:id="appName" text="Platonus v0.1" />
+        <HBox HBox.hgrow="ALWAYS" />
+        <Button fx:id="minBtn" prefHeight="30" prefWidth="50" styleClass="title-btn">
+            <graphic>
+                <ImageView fitHeight="10" fitWidth="10" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/titlePanelIcon/remove.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="maxBtn" prefHeight="29" prefWidth="50" styleClass="title-btn">
+            <graphic>
+                <ImageView fitHeight="10" fitWidth="10" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/titlePanelIcon/tab.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="closeBtn" prefHeight="29" prefWidth="50" styleClass="title-btn-close" text="✕" />
+    </HBox>
+    <HBox spacing="8" styleClass="root" VBox.vgrow="ALWAYS">
+        <VBox fx:id="leftHeaderTwo" prefWidth="320" spacing="10" styleClass="left-header">
+            <padding>
+                <Insets bottom="10" left="12" right="12" top="40" />
+            </padding>
+            <Button fx:id="logoImage">
+                <graphic>
+                    <ImageView fitHeight="80" fitWidth="80" preserveRatio="true">
+                        <image>
+                            <Image url="@../img/logoPlanet.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+                Platonus.
+            </Button>
+            <Region prefHeight="30" />
+            <Label styleClass="staticText" text="    Feather &amp; Tools" />
+            <VBox spacing="10">
+                <Button onAction="#ToMain" prefHeight="60" prefWidth="296" styleClass="firstHeadBtn">
+                    <graphic>
+                        <ImageView fitHeight="0" fitWidth="30" preserveRatio="true" styleClass="head-icon">
+                            <image><Image url="@../img/icons/home.png" /></image>
+                        </ImageView>
+                    </graphic>
+                    Overview
+                </Button>
+
+                <Button fx:id="journalBTN" onAction="#ToTable" prefHeight="60" prefWidth="296" styleClass="firstHeadBtn">
+                    <graphic>
+                        <ImageView fitHeight="30" fitWidth="30" preserveRatio="true" styleClass="head-icon">
+                            <image><Image url="@../img/icons/book.png" /></image>
+                        </ImageView>
+                    </graphic>
+                    Journal of marks
+                </Button>
+
+                <Button fx:id="firstHeadcloseBtn" prefHeight="60" prefWidth="296" styleClass="firstHeadBtn">
+                    <graphic>
+                        <ImageView fitHeight="30" fitWidth="30" preserveRatio="true">
+                            <image><Image url="@../img/icons/survey.png" /></image>
+                        </ImageView>
+                    </graphic>
+                    Tasks
+                </Button>
+
+                <Button fx:id="chatBTN" onAction="#ToChat" prefHeight="60" prefWidth="296" styleClass="firstHeadBtn">
+                    <graphic>
+                        <ImageView fitHeight="34" fitWidth="34" preserveRatio="true" styleClass="head-icon">
+                            <image><Image url="@../img/icons/group.png" /></image>
+                        </ImageView>
+                    </graphic>
+                    Group
+                </Button>
+            </VBox>
+            <Region VBox.vgrow="ALWAYS" />
+            <VBox alignment="BOTTOM_CENTER" maxHeight="200" prefWidth="296" spacing="10">
+                <Label styleClass="staticText" text="© Platonus v0.1 2025" />
+                <HBox alignment="CENTER_LEFT" prefHeight="75" spacing="10" styleClass="account">
+                    <padding>
+                        <Insets bottom="0" left="5" right="10" top="0" />
+                    </padding>
+                    <Button onAction="#ToProfile" prefWidth="235" styleClass="accountBTN">
+                        <graphic>
+                            <HBox spacing="10">
+                                <VBox fx:id="backPlanets" alignment="CENTER" minHeight="50" minWidth="50">
+                                    <ImageView fx:id="profileIconHD" fitHeight="40" fitWidth="40" preserveRatio="true">
+                                        <image><Image url="@../img/profileIcons/1.png" /></image>
+                                    </ImageView>
+                                </VBox>
+                                <VBox alignment="CENTER_LEFT">
+                                    <Label fx:id="fullNameHeader" styleClass="h4Text" />
+                                    <Label fx:id="emailHeader" styleClass="staticText" />
+                                </VBox>
+                            </HBox>
+                        </graphic>
+                    </Button>
+                    <Button fx:id="leaveBtn" onAction="#ToLog" prefHeight="40" prefWidth="40" styleClass="leaveBtn">
+                        <graphic>
+                            <ImageView fitHeight="20" fitWidth="20" preserveRatio="true">
+                                <image><Image url="@../img/icons/exit.png" /></image>
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                </HBox>
+            </VBox>
+        </VBox>
+
+        <VBox styleClass="mainContainer" HBox.hgrow="ALWAYS">
+            <padding><Insets bottom="60" left="60" right="60" top="60" /></padding>
+            <VBox fx:id="section" spacing="40" VBox.vgrow="ALWAYS">
+                <VBox spacing="20" alignment="TOP_CENTER" VBox.vgrow="ALWAYS">
+
+                    <VBox VBox.vgrow="ALWAYS">
+                        <padding><Insets bottom="0" left="30" right="30" top="30" /></padding>
+                        <ScrollPane fx:id="taskBox" styleClass="chatScroll" fitToWidth="true" HBox.hgrow="ALWAYS" >
+
+                        </ScrollPane>
+                    </VBox>
+
+                </VBox>
+            </VBox>
+        </VBox>
+    </HBox>
+</VBox>

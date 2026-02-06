@@ -1,0 +1,88 @@
+.mimiplanet1 {
+    -fx-background-color: #edc89c;
+    -fx-background-radius: 52;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0.2, 0, 4);
+}
+.mimiplanet2 {
+    -fx-background-color: #e0a5db;
+    -fx-background-radius: 52;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0.2, 0, 4);
+}
+.mimiplanet3 {
+    -fx-background-color: #b3cad8;
+    -fx-background-radius: 52;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0.2, 0, 4);
+}
+.procent {
+    -fx-text-fill: #dcdbeb;
+    -fx-font-family: "Outfit";
+    -fx-font-size: 24px;
+}
+.circle {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0.2, 0, 4);
+}
+.pinkBtn {
+
+    -fx-font-size: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0.2, 0, 4);
+}
+.redBtn {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0.2, 0, 4);
+    -fx-background-color: linear-gradient(from 100% 0% to 0% 100%, #ff5f6d, #c44569);
+    -fx-background-radius: 6;
+    -fx-border-color: transparent;
+    -fx-font-family: "Raleway SemiBold";
+    -fx-font-size: 15px;
+    -fx-text-fill:  #781D25;
+    -fx-cursor: hand;
+}
+.redBtn:hover {
+    -fx-background-color: linear-gradient(from 100% 0% to 0% 100%, #ff7a85, #e0567f);
+}
+.iconButton {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0.2, 0, 4);
+    }
+.iconButton .mimiplanet1 .icons,
+.iconButton .mimiplanet2 .icons,
+.iconButton .mimiplanet3 .icons,
+.iconButton .mimiplanet1,
+.iconButton .mimiplanet2,
+.iconButton .mimiplanet3{
+    -fx-opacity: 0.5;
+}
+#chosed {
+    -fx-opacity: 1;
+}
+#chosedBox {
+    -fx-opacity: 1;
+}
+.icons {
+    -fx-opacity: 0.5;
+}
+.iconButton:hover .mimiplanet1 .icons,
+.iconButton:hover .mimiplanet2 .icons,
+.iconButton:hover .mimiplanet3 .icons,
+.iconButton:hover .mimiplanet1,
+.iconButton:hover .mimiplanet2,
+.iconButton:hover .mimiplanet3{
+    -fx-opacity: 1;
+}
+.text-field {
+    -fx-font-family: "Raleway Medium";
+    -fx-background-radius: 10;
+    -fx-background-color: #252733;
+    -fx-padding: 10 14;
+    -fx-border-width: 2;
+    -fx-border-color: #dcdbeb;
+    -fx-border-radius: 10;
+    -fx-font-size: 14px;
+    -fx-text-fill: #dcdbeb;
+}
+.text-field .text {
+    -fx-fill: #dcdbeb;
+}
+.text-field .content {
+    -fx-background-color: #252733;
+}

@@ -1,0 +1,74 @@
+.headChat {
+    -fx-background-color: #1e2128;
+}
+.sendBtn{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+.inputChat{
+    -fx-background-color: #1e2128;
+    -fx-background-radius: 30;
+}
+.mimiplanet1 {
+    -fx-background-color: #edc89c;
+    -fx-background-radius: 12;
+}
+.mimiplanet2 {
+    -fx-background-color: #e0a5db;
+    -fx-background-radius: 12;
+}
+.mimiplanet3 {
+    -fx-background-color: #b3cad8;
+    -fx-background-radius: 12;
+}
+.miniCardButton {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 10;
+}
+.miniCardButton:hover {
+    -fx-background-color: #252733;
+}
+.myMess {
+    -fx-background-color: #1e2128;
+    -fx-background-radius: 15;
+}
+.parMess {
+    -fx-background-color: #252733;
+    -fx-background-radius: 15;
+}
+#inputChat {
+    -fx-font-family: "Raleway Medium";
+    -fx-background-color: transparent;
+    -fx-padding: 10 14;
+    -fx-border-width: 0;
+    -fx-border-color: transparent;
+    -fx-background-radius: 10;
+    -fx-font-size: 14px;
+    -fx-text-fill: #dcdbeb;
+}
+#inputChat .text {
+    -fx-fill: #dcdbeb;
+}
+.sendBtn:hover .head-icon {
+    -fx-opacity: 1;
+}
+.messageText {
+    -fx-font-family: "Raleway SemiBold";
+    -fx-font-size: 15px;
+    -fx-text-fill: #dcdbeb;
+}
+.Name {
+    -fx-font-family: "Raleway SemiBold";
+    -fx-font-size: 14px;
+    -fx-text-fill: #6e61ca;
+}
+.data{
+    -fx-font-family: "Outfit Light";
+    -fx-font-size: 10px;
+    -fx-text-fill: #393c43;
+}
+.unreadBox {
+    -fx-background-color: linear-gradient(from 100% 0% to 0% 100%, #ff5f6d, #c44569);
+    -fx-background-radius: 7.5;
+}

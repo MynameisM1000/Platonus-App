@@ -1,0 +1,32 @@
+.title-btn {
+    -fx-background-color: transparent;
+    -fx-font-size: 14;
+    -fx-background-radius: 0;
+    -fx-padding: 0 12;
+    -fx-cursor: hand;
+}
+#appName {
+    -fx-font-family:"Outfit";
+    -fx-font-size: 14;
+    -fx-text-fill: #e1e4e9;
+}
+.title-btn-close{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: #aaaaaa;
+    -fx-background-radius: 0;
+    -fx-background-radius: 0;
+    -fx-cursor: hand;
+}
+#titleBar{
+    -fx-background-color:  #191c21;
+}
+
+.title-btn:hover {
+    -fx-background-color:#414149;
+}
+
+.title-btn-close:hover {
+    -fx-background-color: #6d5fd0;
+    -fx-text-fill: white;
+}

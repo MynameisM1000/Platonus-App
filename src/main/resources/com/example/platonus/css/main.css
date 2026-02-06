@@ -1,0 +1,405 @@
+.root {
+    -fx-background-color: #22252c;
+}
+.left-header {
+    -fx-background-color: #1e2128;
+}
+.firstHeadBtn {
+    -fx-alignment: CENTER_LEFT;
+    -fx-content-display: LEFT;
+    -fx-graphic-text-gap: 15;
+    -fx-padding: 0 0 0 15;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: #393c43;
+    -fx-font-size: 16px;
+    -fx-background-radius: 12;
+    -fx-font-family: "Outfit Medium";
+    -fx-cursor: hand;
+}
+
+.firstHeadBtn:hover {
+    -fx-background-color: linear-gradient(to right,  #6e61ca, #6052c1);
+    -fx-text-fill: #dcdbeb;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0.2, 0, 4);
+}
+.head-icon {
+    -fx-opacity: 0.2;
+}
+
+.firstHeadBtn:hover .head-icon {
+    -fx-opacity: 1;
+}
+.staticText {
+    -fx-font-family: "Outfit Light";
+    -fx-font-size: 14px;
+    -fx-text-fill: #393c43;
+}
+.bigStaticText{
+    -fx-font-family: "Outfit Light";
+    -fx-font-size: 16px;
+    -fx-text-fill: #393c43;
+}
+.staticTextNote{
+    -fx-font-family: "Raleway SemiBold";
+    -fx-font-size: 14px;
+    -fx-text-fill: #393c43;
+}
+#logoImage {
+    -fx-alignment: CENTER_LEFT;
+    -fx-content-display: LEFT;
+    -fx-graphic-text-gap: 15;
+    -fx-padding: 0 0 0 15;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-font-family: "Outfit";
+    -fx-graphic-text-gap: 20;
+    -fx-text-fill:  #dcdbeb;
+    -fx-font-size: 28px;
+}
+#firstHeadcloseBtn{
+    -fx-text-fill: #dcdbeb;
+    -fx-background-color: linear-gradient(to right,  #6e61ca, #6052c1);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0.2, 0, 4);
+}
+
+
+.mainContainer{
+    -fx-background-color: #1e2128;
+}
+.h1Text {
+    -fx-font-family: "Outfit";
+    -fx-font-size: 48px;
+    -fx-text-fill:  #dcdbeb;
+    -fx-line-spacing: 0px;
+}
+.h2Text {
+    -fx-font-family: "Raleway SemiBold";
+    -fx-font-size: 22px;
+    -fx-text-fill:  #dcdbeb;
+}
+.h3Text{
+    -fx-font-family: "Outfit Medium";
+    -fx-font-size: 20px;
+    -fx-text-fill: #dcdbeb;
+}
+.h4Text{
+    -fx-font-family: "Raleway SemiBold";
+    -fx-font-size: 16px;
+    -fx-text-fill: #dcdbeb;
+}
+.h4TextAn {
+    -fx-font-family: "Outfit Medium";
+    -fx-font-size: 16px;
+    -fx-text-fill: #dcdbeb;
+}
+.h5Text{
+    -fx-font-family: "Outfit Medium";
+    -fx-font-size: 14px;
+    -fx-text-fill: #dcdbeb;
+}
+.h5Textt{
+    -fx-font-family: "Outfit Light";
+    -fx-font-size: 14px;
+    -fx-text-fill: #393c43;
+}
+.h6Text{
+    -fx-font-family: "Outfit Light";
+    -fx-font-size: 12px;
+    -fx-text-fill: #dcdbeb;
+}
+
+.Boxtext {
+    -fx-font-family: "Outfit Medium";
+    -fx-font-size: 16px;
+    -fx-text-fill:  #afa6f7;
+}
+.Box {
+    -fx-background-color: linear-gradient(from 100% 0% to 0% 100%, #6e61ca, #5f52bb);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0.2, 0, 4);
+    -fx-background-radius: 12;
+}
+#shareBtn{
+    -fx-background-color: #25253f;
+    -fx-border-color: transparent;
+    -fx-font-size: 16px;
+    -fx-text-fill:  #dcdbeb;
+    -fx-background-radius: 12;
+    -fx-font-family: "Raleway SemiBold";
+    -fx-cursor: hand;
+}
+#shareBtn:hover {
+    -fx-background-color: #2c2958;
+}
+#bigPlanets {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+.card {
+    -fx-background-color: #252733;
+    -fx-border-color: transparent;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0.2, 0, 4);
+}
+.mimiplanets1 {
+    -fx-background-color: #edc89c;
+    -fx-background-radius: 12;
+}
+.mimiplanets2 {
+    -fx-background-color: #e0a5db;
+    -fx-background-radius: 12;
+}
+.mimiplanets3 {
+    -fx-background-color: #b3cad8;
+    -fx-background-radius: 12;
+}
+.pinkBtn {
+    -fx-background-color: linear-gradient(from 100% 0% to 0% 100%, #6e61ca, #5f52bb);
+    -fx-background-radius: 6;
+    -fx-border-color: transparent;
+    -fx-font-family: "Raleway SemiBold";
+    -fx-font-size: 12px;
+    -fx-text-fill:  #dcdbeb;
+    -fx-cursor: hand;
+}
+.redBtn {
+    -fx-background-color: linear-gradient(from 100% 0% to 0% 100%, #ff5f6d, #c44569);
+    -fx-background-radius: 6;
+    -fx-border-color: transparent;
+    -fx-font-family: "Raleway SemiBold";
+    -fx-font-size: 12px;
+    -fx-text-fill:  #dcdbeb;
+    -fx-cursor: hand;
+}
+.pinkBtn:hover {
+    -fx-background-color: linear-gradient(from 100% 0% to 0% 100%, #716af6, #9382e9);
+}
+.checkBoxs {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 5 0 5 0;
+    -fx-font-size: 14px;
+}
+.checkBoxs .box {
+    -fx-background-color: transparent;
+    -fx-border-width: 2;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+}
+.checkBoxs:selected .mark {
+    -fx-background-color: white;
+}
+
+#checkBox1 .box {
+    -fx-border-color: #dc8d3e;
+}
+#checkBox1:hover .box {
+    -fx-border-color: #b25f2b;
+}
+#checkBox1:selected .box {
+    -fx-background-color: #b25f2b;
+    -fx-border-color: #b25f2b;
+}
+#checkBox1:hover .mark {
+    -fx-background-color: #b25f2b;
+}
+
+#checkBox2 .box {
+    -fx-border-color: #af6cb3;
+}
+#checkBox2:hover .mark {
+    -fx-background-color: #6f3669;
+}
+#checkBox2:hover .box {
+    -fx-border-color: #6f3669;
+}
+#checkBox2:selected .box {
+    -fx-background-color: #6f3669;
+    -fx-border-color: #6f3669;
+}
+
+#checkBox3 .box {
+    -fx-border-color: #5d99be;
+}
+#checkBox3:hover .mark {
+    -fx-background-color: #5784a1;
+}
+#checkBox3:hover .box {
+    -fx-border-color: #5784a1;
+}
+#checkBox3:selected .box {
+    -fx-background-color: #5784a1;
+    -fx-border-color: #5784a1;
+}
+.boxRight{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+}
+.boxRight:hover{
+    -fx-background-radius: 4;
+    -fx-background-color: #22252c;
+}
+.lessonName{
+    -fx-font-family: "Raleway SemiBold";
+    -fx-font-size: 12px;
+    -fx-text-fill:  #dcdbeb;
+}
+.lessonTime1{
+    -fx-font-family: "Raleway SemiBold";
+    -fx-font-size: 12px;
+    -fx-text-fill:  #dc8d3e;
+}.lessonTime2{
+    -fx-font-family: "Raleway SemiBold";
+    -fx-font-size: 12px;
+    -fx-text-fill: #af6cb3;
+}.lessonTime3{
+    -fx-font-family: "Raleway SemiBold";
+    -fx-font-size: 12px;
+    -fx-text-fill: #5d99be;
+}.lessonTime4{
+    -fx-font-family: "Raleway SemiBold";
+    -fx-font-size: 12px;
+    -fx-text-fill: #dc8d3e;
+}.lessonTime5{
+    -fx-font-family: "Raleway SemiBold";
+    -fx-font-size: 12px;
+    -fx-text-fill: #af6cb3;
+}
+.bigLessonTime1{
+    -fx-font-family: "Raleway SemiBold";
+    -fx-font-size: 16px;
+    -fx-text-fill:  #dc8d3e;
+}
+.bigLessonTime2{
+    -fx-font-family: "Raleway SemiBold";
+    -fx-font-size: 16px;
+    -fx-text-fill: #af6cb3;
+}
+.bigLessonTime3{
+    -fx-font-family: "Raleway SemiBold";
+    -fx-font-size: 16px;
+    -fx-text-fill: #5d99be;
+}
+.hboxTime1{
+    -fx-background-color: #edc89c;
+    -fx-background-radius: 6;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0.2, 0, 4);
+}.hboxTime2{
+    -fx-background-color: #e0a5db;
+    -fx-background-radius: 6;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0.2, 0, 4);
+}.hboxTime3{
+    -fx-background-color: #b3cad8;
+    -fx-background-radius: 6;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0.2, 0, 4);
+}.hboxTime4{
+    -fx-background-color: #edc89c;
+    -fx-background-radius: 6;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0.2, 0, 4);
+}.hboxTime5{
+    -fx-background-color: #e0a5db;
+    -fx-background-radius: 6;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0.2, 0, 4);
+}
+#resultBox{
+    -fx-background-color: #afa6f7;
+}
+.leaveBtn {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+
+    -fx-opacity: 0.5;
+    -fx-cursor: hand;
+}
+.darkBtn{
+    -fx-cursor: hand;
+    -fx-background-color: #292932;
+    -fx-border-color: transparent;
+    -fx-background-radius: 6;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0.2, 0, 4);
+    -fx-text-fill: #6258A7;
+    -fx-font-family: "Raleway SemiBold";
+    -fx-font-size: 15px;
+}
+.darkBtn:hover {
+    -fx-background-color: #25252E;
+}
+.leaveBtn:hover {
+    -fx-opacity: 1;
+}
+.accountBTN {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+}
+.account {
+    -fx-background-color:  #242730;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0.2, 0, 4);
+}
+.chatScroll {
+    -fx-background: transparent;
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+.chatScroll .viewport {
+    -fx-background-color: transparent;
+}
+.chatScroll .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+.chatScroll .scroll-bar:vertical .thumb {
+    -fx-background-color: #6e61ca;
+    -fx-background-insets: 2;
+    -fx-background-radius: 5;
+}
+
+.chatScroll .scroll-bar:vertical .track {
+    -fx-background-color: rgba(0,0,0,0.1);
+    -fx-background-radius: 5;
+}
+.chatScroll .corner {
+      -fx-background-color: black;
+}
+.chatScroll .scroll-bar:vertical .increment-arrow,
+.chatScroll .scroll-bar:vertical .decrement-arrow {
+    -fx-background-color: transparent;
+    -fx-shape: "";
+    -fx-padding: 0;
+    -fx-opacity: 0;
+}
+
+.chatScroll .scroll-bar:vertical .increment-button,
+.chatScroll .scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-opacity: 0;
+}
+
+.h4TextBtn{
+    -fx-font-family: "Raleway SemiBold";
+    -fx-font-size: 16px;
+    -fx-text-fill: #dcdbeb;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+     -fx-cursor: hand;
+}
+.h4TextBtn:hover{
+    -fx-font-family: "Raleway SemiBold";
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+     -fx-cursor: hand;
+}
+
+.h4TextBtn:hover .head-icon {
+    -fx-opacity: 1;
+}

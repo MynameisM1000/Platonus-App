@@ -1,0 +1,73 @@
+.procent {
+    -fx-text-fill: #dcdbeb;
+    -fx-font-family: "Outfit";
+    -fx-font-size: 18px;
+}
+.circle {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0.2, 0, 4);
+}
+.chart {
+    -fx-background-color: #252733;
+}
+.chart-plot-background {
+    -fx-background-color: #252733;
+}
+
+.chart-line-symbol {
+    -fx-background-color: transparent;
+}
+.default-color1.chart-series-line {
+    -fx-stroke: transparent;
+}
+.default-color1.chart-line-symbol {
+    -fx-background-color: #6e61ca, #6e61ca;
+}
+.chart-series-line {
+    -fx-stroke: #6e61ca;
+    -fx-stroke-width: 4px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.3) , 5,0,0,2 );
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: #292932;
+    -fx-stroke-width: 2px;
+    -fx-stroke-dash-array: none;
+}
+.chart-vertical-grid-lines {
+    -fx-stroke: transparent;
+}
+.axis {
+    -fx-tick-label-fill: #333333;
+    -fx-font-family: "Raleway SemiBold";
+    -fx-font-size: 16px;
+    -fx-border-color: #252733;
+    -fx-background-color: #252733;
+}
+.gradeI, .gradeV {
+    -fx-text-fill: #dcdbeb;
+    -fx-font-family: "Outfit";
+    -fx-font-size: 16px;
+}
+.h4TextBtn{
+    -fx-font-family: "Raleway SemiBold";
+    -fx-font-size: 16px;
+    -fx-text-fill: #dcdbeb;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+     -fx-cursor: hand;
+}
+.h4TextBtn:hover{
+    -fx-font-family: "Raleway SemiBold";
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+     -fx-cursor: hand;
+}
+.reg {
+    -fx-background-color: #5f52bb;
+    -fx-background-radius: 2;
+}
+
+.h4TextBtn:hover .head-icon {
+    -fx-opacity: 1;
+}
